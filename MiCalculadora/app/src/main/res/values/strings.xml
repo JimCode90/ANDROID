@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">MiCalculadora</string>
+    <string name="calc.hint.input">Introduce tu transaccion</string>
+    <string name="cal.btn.seven">7</string>
+    <string name="cal.btn.four">4</string>
+    <string name="cal.btn.one">1</string>
+    <string name="cal.btn.point">.</string>
+    <string name="cal.btn.eight">8</string>
+    <string name="cal.btn.five">5</string>
+    <string name="cal.btn.two">2</string>
+    <string name="cal.btn.zero">0</string>
+    <string name="cal.btn.nine">9</string>
+    <string name="cal.btn.clear">C</string>
+    <string name="cal.btn.six">6</string>
+    <string name="cal.btn.betwen">/</string>
+    <string name="cal.btn.multi">X</string>
+</resources>
