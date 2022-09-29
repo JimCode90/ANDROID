@@ -12,34 +12,55 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Iniciar Sesion"
-        android:background="@color/material_dynamic_primary0"
-        android:textColor="@color/white"
         android:padding="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        />
 
-    <EditText
+
+    <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/edtPassword"
         android:layout_width="220dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
-        android:inputType="textPassword"
+        android:hint="Password"
+        app:helperText="al menos 9 caracteres"
+        app:endIconMode="password_toggle"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@+id/btnLogin" />
+        app:layout_constraintBottom_toTopOf="@+id/btnLogin"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
 
-    <EditText
+
+    <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/edtName"
         android:layout_width="220dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
-        android:inputType="textPersonName"
+        android:hint="Name"
+        app:endIconMode="clear_text"
+        app:helperText="nombre y apellido"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@+id/edtPassword" />
-
+        app:layout_constraintBottom_toTopOf="@+id/edtPassword"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
 
 
     <TextView
